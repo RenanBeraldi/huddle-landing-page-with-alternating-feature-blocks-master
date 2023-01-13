@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Font-Family: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +18,11 @@
   <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
   <title>Huddle landing page with alternating feature blocks</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
@@ -114,29 +110,62 @@
       </div>
     </section>
     <!-- END FEATURES SECTION -->
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container grid footer-grid">
+
+        <img src="images/footer-logo.svg" alt="Hubble logo" class="footer-logo">
+
+        <!-- 1st Col -->
+        <div class="footer-col">
+
+          <div class="footer-row">
+            <img src="images/icon-location.svg" alt="Location icon" class="footer-icon">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="footer-row">
+            <img src="images/icon-phone.svg" alt="Phone icon" class="footer-icon">
+            <p>+1-543-123-4567</p>
+          </div>
+
+          <div class="footer-row">
+            <img src="images/icon-email.svg" alt="Email icon" class="footer-icon">
+            <p>example@huddle.com</p>
+          </div>
+
+        </div>
+
+        <!-- 2nd Col -->
+        <div class="footer-col">
+          <a href="#" class="footer-link">About Us</a>
+          <a href="#" class="footer-link">What We Do</a>
+          <a href="#" class="footer-link">FAQ</a>
+        </div>
+
+
+        <!-- 3rd Col -->
+        <div class="footer-col">
+          <a href="#" class="footer-link">Carrer</a>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#" class="footer-link">Contact Us</a>
+        </div>
+
+        <!-- 4th Col -->
+        <div class="footer-col">
+          <div class="social-links">
+            <ion-icon name="logo-facebook" class="social-logo"></ion-icon>
+            <ion-icon name="logo-twitter" class="social-logo"></ion-icon>
+            <ion-icon name="logo-instagram" class="social-logo"></ion-icon>
+          </div>
+        </div>
+        <p class="copy-text"> &copy; Copyright 2018 Huddle. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
   </main>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Renan Beraldi Castiglioni</a>.
-    </p>
-  </footer> -->
 </body>
 </html>
