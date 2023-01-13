@@ -13,15 +13,55 @@ body{
 
 html{
     font-size: 62.5%;
+
+    line-height: 1;
 }
 
 .heading{
     font-family: 'Poppins', sans-serif;
+    color: #00252e;
+}
+
+.primary-heading{
+    font-size: 5rem;
+    line-height: 1.5;
+}
+
+.secondary-heading{
+    font-size: 3.2rem;
 }
 
 .container{
     width: 1440px;
     margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    column-gap: 4.8rem
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8.6rem;
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+a{
+    display: inline-block;
+}
+
+.btn{
+    background-color: #ff52bf;
+    padding: 2.4rem 7.2rem;
+    margin-top: 3rem;
+    color: #fff;
 }
 
 .cta{
@@ -36,6 +76,7 @@ html{
 .section-hero{
     background-image: url(images/bg-hero-desktop.svg);
     padding-bottom: 6.4rem;
+    height: 90vh;
 }
 
 .header{
@@ -59,31 +100,20 @@ html{
     margin-top: 3rem;
 }
 
-.hero-spec-box{
+.hero-text-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
     padding-right: 1rem;
 }
 
-.primary-heading{
-    color: #00252e;
-    font-size: 5rem;
-    margin-bottom: 2rem;
-}
-
-.hero-p{
+.hero-text{
     color: #00252e;
     font-size: 2.2rem;
     font-weight: 400;
-}
-
-.hero-btn{
-    background-color: hsl(322, 100%, 66%);
-    padding: 1.6rem 7rem;
-    align-self: flex-start;
-    margin-top: 3rem;
-    color: #fff;
+    line-height: 1.2;
 }
 
 .hero-img{
@@ -96,6 +126,49 @@ html{
 
 /* FEATURES SECTION */
 
+.features-section{
+    padding: 12rem 0 24rem 0
+}
 
+.feature-item{
+    height: 61rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 7.4rem 5.6rem 7.4rem 12.6rem;
+    border-radius: 18px;
+}
 
+.feature-item--2{
+    padding: 7.4rem 12.6rem 7.4rem 5.6rem;
+}
+
+.feature-text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-text{
+    font-size: 2rem;
+    color: #808d99;
+    line-height: 1.2;
+}
+
+.feature-img{
+    width: 100%;
+}
+
+.feature-cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+
+    margin: 0 auto;
+    border-radius: 18px;
+    max-width: 75%;
+    padding: 6.4rem 12.8rem 6.4rem 12.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 /* END FEATURES SECTION */
